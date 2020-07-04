@@ -18,7 +18,7 @@ namespace MineDetonator
             if (!GameController.InGame)
                 return;
             var actor = GameController.Player.GetComponent<Actor>();
-            var deployedObjects = actor.DeployedObjects.Where(x => x.Entity != null && x.Entity.Path.Contains("Metadata/MiscellaneousObjects/RemoteMine")).ToList();
+            var deployedObjects = actor.DeployedObjects.Where(x => x.ObjectType == 10).ToList(); // object type 10 == mine
 
             var realRange = Settings.DetonateDist.Value;
             var mineSkill = actor.ActorSkills.Find(x => x.Name.ToLower().Contains("mine"));
