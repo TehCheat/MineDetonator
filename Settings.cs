@@ -11,7 +11,7 @@ namespace MineDetonator
     {
 		public Settings()
 		{
-            Enable = new ToggleNode(true);
+            Enable = new ToggleNode(false);
 
         }
 
