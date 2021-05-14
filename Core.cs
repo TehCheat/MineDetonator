@@ -55,9 +55,9 @@ namespace MineDetonator
                 && !x.Path.StartsWith("Metadata/Monsters/LeagueBetrayal/BetrayalTaserNet")
                 && !x.Path.StartsWith("Metadata/Monsters/LeagueBetrayal/BetrayalUpgrades/UnholyRelic")
                 && !x.Path.StartsWith("Metadata/Monsters/LeagueBetrayal/BetrayalUpgrades/BetrayalDaemonSummonUnholyRelic")
-                && !x.GetComponent<Life>().HasBuff("hidden_monster")
-                && !x.GetComponent<Life>().HasBuff("avarius_statue_buff")
-                && !x.GetComponent<Life>().HasBuff("hidden_monster_disable_minions")
+                && !x.GetComponent<Buffs>().HasBuff("hidden_monster")
+                && !x.GetComponent<Buffs>().HasBuff("avarius_statue_buff")
+                && !x.GetComponent<Buffs>().HasBuff("hidden_monster_disable_minions")
                 && FilterNullAction(x.GetComponent<Actor>())
                 && x.GetComponent<Actor>().CurrentAction?.Skill?.Name != "AtziriSummonDemons"
                 && x.GetComponent<Actor>().CurrentAction?.Skill?.Id != 728
