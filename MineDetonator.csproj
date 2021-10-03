@@ -17,7 +17,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\..\..\..\PoEHelper\Plugins\Compiled\MineDetonator\</OutputPath>
+    <OutputPath>..\..\..\..\PoeHelper\Plugins\Compiled\MineDetonator\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -25,14 +25,14 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>..\..\..\..\PoEHelper\Plugins\Compiled\MineDetonator\</OutputPath>
+    <OutputPath>..\..\..\..\PoeHelper\Plugins\Compiled\MineDetonator\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="ExileCore">
-      <HintPath>..\..\..\..\PoEHelper\ExileCore.dll</HintPath>
+      <HintPath>..\..\..\..\PoeHelper\ExileCore.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
